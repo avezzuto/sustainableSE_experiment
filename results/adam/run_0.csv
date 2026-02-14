@@ -1,0 +1,2 @@
+run_id,optimizer,test_accuracy,test_loss,final_val_accuracy,best_val_accuracy
+0,adam,0.5767999887466431,482.60888671875,0.5767999887466431,0.5806000232696533

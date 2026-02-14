@@ -1,0 +1,2 @@
+run_id,optimizer,test_accuracy,test_loss,final_val_accuracy,best_val_accuracy
+2,rmsprop,0.4927999973297119,3.4111311435699463,0.4927999973297119,0.5284000039100647

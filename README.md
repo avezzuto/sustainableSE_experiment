@@ -1,7 +1,7 @@
 # Group 30 Energy Experiment: Measuring the Energy Impact of GPU Optimisation on Classifier Training
 
-The machine learning notebook (`mnist-cnn-classification.ipynb`) has been slightly adapted from https://www.kaggle.com/code/merfarukyce/mnist-cnn-classification to allow for energy profiling on the training process.
+The machine learning notebook (`cifar10-with-cnn-.ipynb`) has been slightly adapted from https://www.kaggle.com/code/roblexnana/cifar10-with-cnn-for-beginer to allow for energy profiling on the training process.
 
-The energy measuraments can be obtained by running the `run.py` file. For now, we simply run training twice, one with GPU optimisation, and once without. However, the code already has all the necessary components to be scaled up to ten runs for each mode. 
+The energy measuraments can be obtained by running the `run.py` file. For now, we simply run training five times, one with each type of optimiser. However, the code already has all the necessary components to be scaled up to ten runs for each type. 
 
-Lastly, please note that the way GPU optimisation is turned on or off is made for MacOS. On different operating systems, this part of the code will likely need to be modified.
+The results from EnergiBridge are stored in respective folders for each optimisation type, and validation and testing results are stored in the `results` folder.

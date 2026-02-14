@@ -1,0 +1,2 @@
+run_id,optimizer,test_accuracy,test_loss,final_val_accuracy,best_val_accuracy
+4,sgd,0.47609999775886536,1.4611470699310303,0.47609999775886536,0.47609999775886536
