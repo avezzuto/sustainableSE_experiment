@@ -1,18 +1,19 @@
 import os
 import random
 import subprocess
+import time
 
 seed = 42
 random.seed(seed)
 
-runs = ["sgd"] * 1 + ["sgd_momentum"] * 1 + ["rmsprop"] * 1 + ["adam"] * 1 + ["adamw"] * 1
+runs = ["true"] * 1 + ["false"] * 1
 random.shuffle(runs)
 
-for i, mode in enumerate(runs):
-    print(f"Run {i + 1} - Mode: {mode}", flush=True)  # flush ensures immediate output
+for i, mixed_precision_flag in enumerate(runs):
+    print(f"Run {i + 1} - Mixed precision flag: {mixed_precision_flag}", flush=True)  # flush ensures immediate output
 
     env = os.environ.copy()
-    env["OPTIMIZER"] = mode
+    env["USE_MIXED_PRECISION"] = mixed_precision_flag
     env["RUN_ID"] = str(i)
 
     subprocess.run(
@@ -20,3 +21,5 @@ for i, mode in enumerate(runs):
         env=env,
         check=True
     )
+
+    time.sleep(120)
