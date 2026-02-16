@@ -1,2 +1,0 @@
-run_id,optimizer,test_accuracy,test_loss,final_val_accuracy,best_val_accuracy
-1,sgd_momentum,0.33500000834465027,1.8153103590011597,0.33500000834465027,0.5936999917030334
