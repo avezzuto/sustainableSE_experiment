@@ -6,10 +6,10 @@ import time
 seed = 42
 random.seed(seed)
 
-runs = ["true"] * 10 + ["false"] * 10
+runs = ["true"] * 1 + ["false"] * 1
 random.shuffle(runs)
 
-warmup_duration_seconds = 300 # 5 minute CPU warm-up
+warmup_duration_seconds = 60 # 5 minute CPU warm-up
 
 print(f"Starting CPU warm-up for {warmup_duration_seconds} seconds...", flush=True)
 
