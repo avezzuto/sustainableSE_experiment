@@ -6,7 +6,7 @@ import time
 seed = 42
 random.seed(seed)
 
-runs = ["true"] * 10 + ["false"] * 10
+runs = ["true"] * 30 + ["false"] * 30
 random.shuffle(runs)
 
 warmup_duration_seconds = 300 # 5 minute CPU warm-up
