@@ -1,0 +1,2 @@
+run_id,mixed_precision,test_accuracy,test_loss,final_val_accuracy,best_val_accuracy
+53,true,0.46959999203681946,8.315171241760254,0.46959999203681946,0.5271999835968018
